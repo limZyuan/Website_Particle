@@ -12,40 +12,44 @@ html {
   background: #332044;
 }
 
+#wrapper {
+  position: relative;
+  height: 100vh;
+}
+
 #canvas1 {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
   background: linear-gradient(45deg, #1c1224, #44336d);
   z-index: -1;
-  animation-name: fadein;
-  animation-duration: 3s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
+  animation: fadein 3s forwards;
   opacity: 0;
+  height: 100%;
+  width: 100%;
 }
-#wrapper {
-  position: absolute;
-  display: inline-flex;
+
+#container {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: auto;
+  padding: 1.5rem;
+  width: 900px;
 }
+
+/* #container .discordLogo {
+  justify-content: center;
+} */
 
 h1 {
   font-family: "Playfair Display", serif;
   text-align: center;
   color: #c38d7c;
-  font-size: 3rem;
+  font-size: 5rem;
   letter-spacing: 0;
   font-weight: 400;
   animation-name: fadein;
-  animation-duration: 3s;
-  animation-delay: 1s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   opacity: 0;
   margin-bottom: 1rem;
@@ -55,21 +59,16 @@ p {
   color: #ffffff;
   text-align: center;
   font-weight: 500;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
-  animation-name: fadein;
-  animation-duration: 3s;
-  animation-delay: 4s;
-  animation-fill-mode: forwards;
+  animation: fadein 1s forwards;
   opacity: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
+  text-justify: auto;
 }
 
 #mainbutton {
-  animation-name: fadein;
-  animation-duration: 3s;
-  animation-delay: 5s;
-  animation-fill-mode: forwards;
+  animation: fadein 1s forwards;
   opacity: 0;
   outline: none;
   text-decoration: none;
@@ -79,7 +78,6 @@ p {
   font-weight: 600;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
-  white-space: nowrap;
   padding: 1rem;
   cursor: pointer;
 }
@@ -93,9 +91,7 @@ p {
 
 .fa-discord {
   transform: translateY(-80%);
-  animation-name: fadedown;
-  animation-duration: 3s;
-  animation-fill-mode: forwards;
+  animation: fadedown 3s forwards;
   opacity: 0;
   font-size: 3rem;
   margin-bottom: 2rem;
@@ -131,5 +127,12 @@ p {
   }
   100% {
     color: #c38d7c;
+  }
+}
+
+
+@media screen and (max-width: 950px) {
+  #wrapper {
+    width: 1000px;
   }
 }
