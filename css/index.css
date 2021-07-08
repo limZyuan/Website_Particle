@@ -44,11 +44,20 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background: linear-gradient(90deg, #1c1224, #1a1033);
   z-index: 100;
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  width: 100%;
+  justify-content: space-around;
 }
 
 .navbar li {
@@ -80,6 +89,56 @@ p {
   left: 0;
 }
 
+.navbar .menu-btn i {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+.navbar .menu-btn {
+  display: none;
+}
+input[type="checkbox"] {
+  display: none;
+}
+
+/* responsive css for navbar  */
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: flex-start;
+  }
+  .navbar .menu-btn {
+    display: block;
+  }
+  #click:checked ~ .menu-btn i:before {
+    content: "\f00d";
+  }
+  .navbar ul {
+    position: fixed;
+    top: 3rem;
+    left: -100%;
+    background: linear-gradient(90deg, #1c1224, #1a1033);
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  #click:checked ~ ul {
+    left: 0;
+  }
+  .navbar ul li a {
+    width: 100%;
+    margin-left: -100%;
+    display: block;
+    font-size: 20px;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  #click:checked ~ ul li a {
+    margin-left: 0px;
+  }
+}
+
 /* particles canvas */
 
 #canvas1 {
@@ -95,6 +154,7 @@ p {
   animation-fill-mode: forwards;
   opacity: 0;
 }
+
 .wrapper {
   position: absolute;
   display: inline-flex;
