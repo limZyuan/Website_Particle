@@ -1,15 +1,33 @@
+.conductwrapper {
+  min-height: 100vh;
+  padding: 5% 10% 4rem 10%;
+  background: linear-gradient(45deg, #1c1224, #3d2f5e);
+}
+
 .conductAdaptations {
-    margin-bottom: 2.5rem;
+  color: #ffffff;
+  margin: 5% 0 4rem 0;
 }
 
-@media screen and (min-height: 250px) {
-    #wrapper {
-        height: 800px;
-    }
+.conductAdaptations a {
+  color: #c38d7c;
 }
 
-@media screen and (min-height: 750px) {
-    #wrapper {
-        height: 100vh;
-    }
+.mainbuttonconduct {
+  text-decoration: none;
+  border: 2px solid #2c81e2;
+  border-radius: 200px;
+  color: #2c81e2;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  white-space: nowrap;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.mainbuttonconduct:hover {
+  transition: 0.2s ease-in-out;
+  color: #5ea9ff;
+  border: 2px solid #5ea9ff;
 }

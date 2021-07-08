@@ -12,65 +12,124 @@ html {
   background: #332044;
 }
 
-#wrapper {
-  position: relative;
-  height: 100vh;
-}
-
-#canvas1 {
-  position: absolute;
-  top: 0;
-  background: linear-gradient(45deg, #1c1224, #44336d);
-  z-index: -1;
-  animation: fadein 3s forwards;
-  opacity: 0;
-  height: 100%;
-  width: 100%;
-}
-
-#container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-  padding: 1.5rem;
-  width: 900px;
-}
-
-/* #container .discordLogo {
-  justify-content: center;
-} */
-
 h1 {
   font-family: "Playfair Display", serif;
-  text-align: center;
   color: #c38d7c;
-  font-size: 5rem;
+  font-size: 3rem;
   letter-spacing: 0;
   font-weight: 400;
-  animation-name: fadein;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  opacity: 0;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  color: #eecdc3;
+  font-size: 2rem;
+  letter-spacing: 0;
+  font-weight: 400;
   margin-bottom: 1rem;
 }
 
 p {
   color: #ffffff;
-  text-align: center;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   font-family: "Poppins", sans-serif;
-  animation: fadein 1s forwards;
-  opacity: 0;
-  margin-bottom: 1rem;
-  text-justify: auto;
+  margin-bottom: 3rem;
 }
 
-#mainbutton {
-  animation: fadein 1s forwards;
+/* nav bar */
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(90deg, #1c1224, #1a1033);
+  z-index: 100;
+}
+
+.navbar li {
+  display: inline;
+  text-align: center;
+}
+
+.navbar a {
+  display: inline-block;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.8rem;
+}
+.navbar a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 0.1rem;
+  margin-top: 0.3rem;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+.navbar a:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/* particles canvas */
+
+#canvas1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(45deg, #1c1224, #44336d);
+  z-index: -1;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
   opacity: 0;
-  outline: none;
+}
+.wrapper {
+  position: absolute;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.homeh1,
+.homep1 {
+  text-align: center;
+  animation-name: fadein;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.homeh1 {
+  animation-duration: 3s;
+  animation-delay: 1s;
+}
+
+.homep1 {
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+.mainbutton {
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+  opacity: 0;
   text-decoration: none;
   border: 2px solid #2c81e2;
   border-radius: 200px;
@@ -78,11 +137,12 @@ p {
   font-weight: 600;
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
+  white-space: nowrap;
   padding: 1rem;
   cursor: pointer;
 }
 
-#mainbutton:hover {
+.mainbutton:hover {
   transform: scale(1.05);
   transition: 0.2s ease-in-out;
   color: #5ea9ff;
@@ -91,7 +151,9 @@ p {
 
 .fa-discord {
   transform: translateY(-80%);
-  animation: fadedown 3s forwards;
+  animation-name: fadedown;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
   opacity: 0;
   font-size: 3rem;
   margin-bottom: 2rem;
@@ -101,6 +163,8 @@ p {
 .flashwords {
   animation: flash 2s infinite ease-in-out alternate;
 }
+
+/* animations */
 
 @keyframes fadein {
   0% {
@@ -130,9 +194,15 @@ p {
   }
 }
 
+/* responsive css for small phones  */
 
-@media screen and (max-width: 950px) {
-  #wrapper {
-    width: 1000px;
+@media only screen and (max-height: 750px) {
+  .fa-discord {
+    font-size: 0rem;
+  }
+}
+@media only screen and (max-height: 570px) {
+  .flashwords {
+    display: none;
   }
 }

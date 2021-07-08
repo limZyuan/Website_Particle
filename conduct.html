@@ -23,14 +23,28 @@
     <title>Singapore University Discord</title>
   </head>
   <body>
-    <div id="wrapper">
-      <div id="container">
-        <i class="discordLogo fab fa-discord"></i>
+    <ul class="navbar">
+      <li class="home"><a href="/">Home</a></li>
+      <li class="conduct"><a href="./conduct.html">Code of Conduct</a></li>
+      <li class="join">
+        <a
+          href="https://discord.com/invite/6jXfEPDfGC"
+          title="https://discord.com/invite/6jXfEPDfGC"
+          target="_blank"
+          rel="noopener"
+          noreferrer
+          >Join Now!</a
+        >
+      </li>
+    </ul>
+    <div class="conductwrapper">
         <h1>Code Of Conduct</h1>
         <p class='conductIntroduction'></p>
-        <b class="flashwords"
-            >You are invited to join and connect with other students!</b
-        >
+        <h2>Conduct</h2>
+        <p class='conductConduct'></p>
+        <h2>Moderation</h2>
+        <p class='conductModeration'></p>
+
         <div id='conductAdaptations' class="conductAdaptations">
           <i>
             Adapted from 
@@ -68,23 +82,19 @@
             rel="noopener"
             >
               Contributor Covenant v1.3.0
-            </a>
-            .
+            </a>.
         </div>
         <a
-          id="mainbutton"
-          href="https://discord.com/invite/6jXfEPDfGC"
-          title="https://discord.com/invite/6jXfEPDfGC"
-          target="_blank"
-          rel="”noopener"
-          noreferrer”
-        >
-          Join the Discord now!
-        </a>
-      </div>
-      <canvas id="canvas1"></canvas>
+        class="mainbuttonconduct"
+        href="https://discord.com/invite/6jXfEPDfGC"
+        title="https://discord.com/invite/6jXfEPDfGC"
+        target="_blank"
+        rel="”noopener"
+        noreferrer”
+      >
+        Join the Discord now!
+      </a>
     </div>
-    <script type="text/javascript" src="index.js"></script>
     <script type="text/javascript" src="copywriting.js"></script>
   </body>
 </html>
