@@ -12,7 +12,7 @@ let multipleHtmlPlugins = htmlPageNames.map((name) => {
 });
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: {
     index: "./js/index.js",
     conduct: "./js/copywriting.js",
