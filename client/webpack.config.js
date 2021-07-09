@@ -22,12 +22,21 @@ module.exports = {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist"),
     clean: true,
+    publicPath: "/",
     assetModuleFilename: "./assets/[name][ext]",
   },
   devServer: {
     contentBase: path.resolve(__dirname, "dist"),
     compress: true,
     hot: true,
+    proxy: {
+      "/": {
+        target: "http://localhost:3003",
+        onProxyReq: function (request) {
+          request.setHeader("origin", "http://localhost:3003");
+        },
+      },
+    },
   },
   plugins: [
     new MiniCssExtractPlugin(),
