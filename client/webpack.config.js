@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 // Dynamic html page generation
-let htmlPageNames = ["index", "conduct"];
+let htmlPageNames = ["conduct"];
 let multipleHtmlPlugins = htmlPageNames.map((name) => {
   return new HtmlWebpackPlugin({
     template: `./assets/${name}.html`, // relative path to the HTML files
