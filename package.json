@@ -8,7 +8,7 @@
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "update": "concurrently \"npm install\" \"npm install --prefix client\" ",
-    "build": "concurrently \"node server\" \"npm run build\""
+    "build": "concurrently \"node server\" \"npm run build --prefix client\""
   },
   "author": "",
   "license": "ISC",
