@@ -21,3 +21,5 @@ app.use(express.static(path.join(__dirname, "./", "client", "dist")));
 const PORT = process.env.PORT || 3003;
 
 app.listen(PORT, () => console.log(`Server is listening on port ${PORT}`));
+
+//test
