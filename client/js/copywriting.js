@@ -1,3 +1,6 @@
+import "../css/index.css";
+import "../css/conduct.css";
+
 var codeOfConduct = {
   intro: {
     type: "basic",
