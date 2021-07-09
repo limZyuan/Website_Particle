@@ -8,6 +8,7 @@ let multipleHtmlPlugins = htmlPageNames.map((name) => {
   return new HtmlWebpackPlugin({
     template: `./assets/${name}.html`, // relative path to the HTML files
     filename: `${name}`, // output HTML files
+    chunks: [`${name}`], // respective JS files
   });
 });
 
@@ -33,6 +34,11 @@ module.exports = {
     // Generates default index.html
     new HtmlWebpackPlugin({
       template: "./assets/index.html",
+      minify: {
+        removeAttributeQuotes: true,
+        collapseWhitespace: true,
+        removeComments: true,
+      },
     }),
   ].concat(multipleHtmlPlugins), // Rest of the html pages
 
