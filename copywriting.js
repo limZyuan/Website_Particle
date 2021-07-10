@@ -3,7 +3,7 @@ var codeOfConduct = {
     type: "basic",
     paragraphs: [
       "SG Uni Travellers is the biggest chat and events community for University Students predominantly in Singapore. We constanty try our best to stray away from tough moderation, but we do have expectations for how our server members should behave.",
-      "This is not a binding document and members should try their best to have the spirit listed in these guidelines. SG Uni Travellers's wants to be a community which supports individual growth, but we will not risk the comfort and safety of other members for such growth.",
+      "This is not a binding document and members should try their best to have the spirit listed in these guidelines. SG Uni Travellers wants to be a community which supports individual growth, but we will not risk the comfort and safety of other members for such growth.",
       "'Team' or 'Admin Team' would refer to the entire SG Uni Travellers' team runnng the community, and this is inclusive of Admins, Moderators and Server Developers.",
     ],
   },
@@ -28,13 +28,13 @@ var codeOfConduct = {
 
       "9. This is not a bragging server and we do not welcome any form of bragging or member worship. Everyone has an equal position in the server, regardless of whether you are a newcomer or someone that has been in the server for long. Staff will not take sides and will moderate regardless of server rank or position.",
 
-      "10. We do not allow any form of 'stirring-the-pot' or 'causing drama'. Anyone found guiltry will be dealt with the highest form of moderation.",
+      "10. We do not allow any form of 'stirring-the-pot' or 'causing drama'. Anyone found guilty will be dealt with the highest form of moderation.",
 
-      "11. The server will always be free to join and leave, so long as these join-leaves are not counted as 'trolling'. Any form of undermining the efforts of the staff will be met with an instant, non-negotiatable ban.",
+      "11. The server will always be free to join and leave, so long as these join-leaves are not counted as 'trolling'.",
 
       "Remember that it’s your responsibility to make your fellow members comfortable. Everyone wants to get along and we are all here first and foremost because we want to better the University community in Singapore and connect with fellow University students. You will find that people will be eager to assume good intent and forgive as long as you earn their trust.",
 
-      "Additionally, the staff team makes decisions for the betterment of the server. You might or might not like those decisions, but that is not the problem of the staff team as you are always free to leave the server. We will never stop or threaten any member from leaving the server. It is our job to ensure that the server stays on track, and decisions would almost always never eb able to please the entire community.",
+      "Additionally, this is a public server and NOT your own private server. It is the job of the staff team to ensure that the server stays on track, and the team makes decisions for the betterment of the entire server. You might or might not like those decisions, but it is rarely that decisions will be able to please the entire community. You are always free to leave the server and the team will never stop or threaten any member from leaving the server.",
     ],
   },
   moderation: {
@@ -42,15 +42,17 @@ var codeOfConduct = {
     paragraphs: [
       "These are the policies for upholding the community's conduct. We especially need to hear from you if a staff member has crossed the line. Do contact anyone of the staff in the event where you feel that way, or if you feel that a situation is in need of moderation.",
 
-      "1. Remarks that violate the code of conduct, including hateful, hurtful, oppressive, or exclusionary remarks, are not allowed. (Cursing is allowed, but never targeting another user, and never in a hateful manner.) Excessive cursing will get you banned.",
+      "1. Remarks that violate the code of conduct, including hateful, hurtful, oppressive, or exclusionary remarks, are not allowed. (Cursing is allowed, but never targeting another user, and never in a hateful manner). Excessive cursing will get you banned.",
 
-      "2. Remarks that staff find inappropriate, whether listed in the code of conduct or not, are also not allowed. Staff will respond to such remarks with a warning. If the warning is unheeded, the user will receive a strike, mute or may be kicked from the server (removed but not restricted from re-entering)",
+      "2. Remarks that staff find inappropriate, whether listed in the code of conduct or not, are also not allowed. Staff will respond to such remarks with a warning. If the warning is unheeded, the user will receive a strike, mute, or kick (removed but not restricted from re-entering)",
 
       "3. If behavior persists, the user will be permanently removed from the server. We loosely follows a three strikes rule. These can be obtained in quick succession, or over many months. Members who show genuine effort to improve will be granted more leeway on “forgiving” these warnings, and particularly severe transgressions will not entail a second chance.",
 
       "4. Griping about bans in-channel is strictly not allowed and will result in more bans.",
 
-      "5. Your free speech is not our problem. We recognize that this policy is a restrictive political stance. That is the intent. If you want a room with different rules, go create one. In the majority of cases, this is fine, and never requires anyone to be banned. A kick and a 2-minute ban to cool down is usually enough, if the warning didn’t do it.",
+      "5. Any form of undermining the efforts of the staff will be met with an instant, non-negotiatable ban.",
+
+      "6. Your free speech is not our problem. We recognize that this policy is a restrictive political stance. That is the intent. If you want a room with different rules, go create one. In the majority of cases, this is fine, and never requires anyone to be banned. A kick and a 2-minute ban to cool down is usually enough, if the warning didn’t do it.",
 
       "SG Uni Travellers aims to be a solid University community on the internet. We want you to grow your skills, your career, and the rest of yourself. Most of the server is strictly for-help and SFW, but some times sensitive topics might be talked about. We don’t have a blanket ban on these discussions, but we ask you to keep it within the boundaries of “professional.” These discussions are moderated very closely, make sure to adhere to this code of conduct.",
 
